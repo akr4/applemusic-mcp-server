@@ -48,10 +48,10 @@ pub struct SearchSongsRequest {
 
 #[derive(Debug, Deserialize, schemars::JsonSchema)]
 pub struct GeneratePlaybackLinkRequest {
-    #[schemars(description = "Song ID string (mutually exclusive with playlist_id)")]
+    #[schemars(description = "Song ID (mutually exclusive with playlist_id)")]
     pub song_id: Option<String>,
 
-    #[schemars(description = "Playlist ID string (mutually exclusive with song_id)")]
+    #[schemars(description = "Playlist ID (mutually exclusive with song_id)")]
     pub playlist_id: Option<String>,
 }
 
