@@ -2,7 +2,8 @@ use anyhow::Result;
 use clap::Parser;
 use env_logger::{Builder, Env, Target};
 use log::info;
-use rmcp::{transport::stdio, ServiceExt};
+use rmcp::transport::io::stdio;
+use rmcp::ServiceExt;
 
 mod auth;
 mod models;
